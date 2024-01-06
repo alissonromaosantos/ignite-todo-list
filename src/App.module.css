@@ -1,0 +1,195 @@
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.containerAddTodo {
+  max-width: 638px;
+  height: 54px;
+  margin-top: -30px;
+}
+
+.containerAddTodo form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.containerAddTodo form input {
+  width: 606px;
+  height: 100%;
+  background-color: var(--gray-500);
+  padding: 16px;
+  font-size: 1.6rem;
+  line-height: 22.4px;
+  border: none;
+  border-radius: 8px;
+  outline-color: var(--purple-dark);
+  color: var(--gray-100);
+}
+
+.containerAddTodo form input::placeholder {
+  color: var(--gray-300);
+}
+
+.containerAddTodo form button[type="submit"] {
+  width: 90px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: var(--blue-dark);
+  color: var(--gray-100);
+  border: none;
+  border-radius: 8px;
+  padding: 16px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-weight: 700;
+}
+
+.containerAddTodo form button[type="submit"]:hover {
+  background-color: var(--blue);
+}
+
+.containerAddTodo form button[type="submit"]:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.containerTodos {
+  width: 638px;
+  margin-top: 66px;
+}
+
+.containerTodos .infos {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.tasksCreated {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.tasksCreated strong {
+  color: var(--blue);
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.tasksCreated span {
+  color: var(--gray-200);
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background-color: var(--gray-400);
+}
+
+.tasksDone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.tasksDone strong {
+  color: var(--purple);
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.tasksDone span {
+  color: var(--gray-200);
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background-color: var(--gray-400);
+}
+
+.todos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.todosEmpty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 64px 0;
+  border-top: 1px solid var(--gray-400);
+}
+
+.todosEmpty img {
+  margin-bottom: 16px;
+}
+
+.todosEmpty span {
+  color: var(--gray-300);
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 140%;
+}
+
+.todosEmpty p {
+  color: var(--gray-300);
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+@media (max-width: 425px) {
+  .containerAddTodo {
+    margin-top: -5px;
+  }
+
+  .containerAddTodo form {
+    flex-direction: column;
+  }
+
+  .containerAddTodo form input {
+    width: 300px;
+    font-size: 1.2rem;
+  }
+
+  .containerTodos {
+    width: 300px;
+  }
+
+  .tasksCreated,
+  .tasksDone {
+    gap: 8px;
+  }
+
+  .tasksCreated strong,
+  .tasksDone strong {
+    font-size: 1rem;
+  }
+
+  .tasksCreated span,
+  .tasksDone span {
+    font-size: 1rem;
+    padding: 1px 4px;
+  }
+
+  .todosEmpty span,
+  .todosEmpty p {
+    font-size: 1.2rem;
+  }
+}

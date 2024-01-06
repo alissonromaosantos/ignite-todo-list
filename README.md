@@ -32,7 +32,7 @@
   npm run dev
 ```
 
-## Features do Projeto
+## 🆕 Features do Projeto
   <ol>
     <li>Criar tarefas ✅</li>
     <li>Marcar tarefa como feita ✅</li>

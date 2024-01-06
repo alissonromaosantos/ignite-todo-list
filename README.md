@@ -46,7 +46,7 @@
 ## 🚀 Deploy
   Acesse o projeto em produção clicando no link abaixo:
     <ul>
-      <li>[Todo List]()</li>
+      <li>[Todo List](https://todo-list-red-beta.vercel.app/)</li>
     </ul>
 
 <p>Feito com 💙 por Alisson Romão Santos</p>
